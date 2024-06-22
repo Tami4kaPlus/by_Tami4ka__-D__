@@ -1,7 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tami4kaPlus/Tami4ka/main/TestLib"))()
  
-local Window = Library.CreateLib("🔳 Avtor Hub🔳", "LightTheme", "rbxassetid://16805845233")
- 
+local Window = Library.CreateLib("🔳 Avtor Hub🔳", "DarkTheme", "rbxassetid://16805845233")
  
 local PlrTab = Window:NewTab("Main")
 local PlrSection = PlrTab:NewSection("Main")
