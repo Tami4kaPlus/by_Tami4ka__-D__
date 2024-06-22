@@ -3115,6 +3115,9 @@ end)
 CreatorSection:NewButton("Copy TG Avtor Scripts Link", "Telegram Avtor Scripts", function()
 setclipboard("https://t.me/AvtorScripts")
 end)
-CreatorSection:NewKeybind("KeyBind", "Keybind open/close", Enum.KeyCode.RightShift, function()
-  Library:ToggleUI()
-end)
+if game:GetService("UserInputService").TouchEnabled then
+else
+	CreatorSection:NewKeybind("KeyBind", "Keybind open/close", Enum.KeyCode.RightShift, function()
+	  Library:ToggleUI()
+	end)
+end
