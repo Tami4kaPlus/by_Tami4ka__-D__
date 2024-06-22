@@ -3110,23 +3110,11 @@ local CreatorSection = CreatorTab:NewSection("Credits to Avtor1zaTion")
 local CreatorSection = CreatorTab:NewSection("Version 2.0")
 
 CreatorSection:NewButton("Copy YT Avtor Scripts Link", "Youtube Avtor Scripts", function()
-
 setclipboard("https://youtube.com/@avtorscripts?si=Pbp9QsfrcDZ5b-nO")
 end)
 CreatorSection:NewButton("Copy TG Avtor Scripts Link", "Telegram Avtor Scripts", function()
-
-CreatorSection:NewKeybind("Open/Close Gui KeyBind", "Keybind open/close", Enum.KeyCode.RightShift, function()
-  Library:ToggleUI()
-end)
-
 setclipboard("https://t.me/AvtorScripts")
 end)
-
-wait(0.1)
-
-local stroke = Instance.new("UIStroke")
-stroke.Parent = game.CoreGui.AvtorHub.Main
-stroke.Thickness = 3
-while wait() do local hue = tick() % 15 / 15
- local color = Color3.fromHSV(hue,1,1)     stroke.Color = color
-end
+CreatorSection:NewKeybind("KeyBind", "Keybind open/close", Enum.KeyCode.RightShift, function()
+  Library:ToggleUI()
+end)
